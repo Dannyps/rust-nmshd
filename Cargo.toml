@@ -1,0 +1,16 @@
+[package]
+name = "hello-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand_core = { version = "*", features = ["std"] }
+ed25519-dalek = { version = "*", features = ["rand_core"] }
+getrandom = "0.2"
+ed25519 = "*"
+base64 = "*"
+
+[features]
+getrandom = []
